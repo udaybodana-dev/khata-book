@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khata Book</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app-container">
+        <div class="header-box">
+            <h1 class="main-title">Khata Book</h1>
+            <p class="sub-title">Modern Budget Manager</p>
+        </div>
+        <div class="balance-board">
+            <p class="bal-text">Net Balance</p>
+            <h2 id="total-val" class="net-bal">₹0.00</h2>
+            <div class="progress-box">
+                <div id="budget-bar"></div>
+            </div>
+            <p id="budget-txt" class="budget-text">0% Limit Consumed</p>
+            <div class="split-box">
+                <div>
+                    <h5 class="inc-title">Income</h5>
+                    <p id="inc-amt" class="inc-amt">₹0.00</p>
+                </div>
+                <div class="exp-box">
+                    <h5 class="exp-title">Expense</h5>
+                    <p id="exp-amt" class="exp-amt">₹0.00</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="history-view">
+            <h4 class="history-heading">History Log</h4>
+            <ul id="trans-list" class="list-styler"></ul>
+        </div>
+        <form id="trans-form">
+            <div class="input-row">
+                <input type="text" id="desc" placeholder="Note (Salary, Food...)" required>
+                <select id="cat-select">
+                    <option value="General">General</option>
+                    <option value="Fuel">Fuel</option>
+                    <option value="Rent">Rent</option>
+                    <option value="Work">Work</option>
+                </select>
+            </div>
+            <div class="input-row">
+                <input type="number" id="amt" placeholder="₹ Amount" required>
+                <select id="type-select">
+                    <option value="plus">Income (+)</option>
+                    <option value="minus">Expense (-)</option>
+                </select>
+            </div>
+            <button id="add-btn" class="main-btn">Save entry</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+    <footer class="designer-copyright">
+        © Designed & Developed by <span>Uday Bodana</span>
+    </footer>
+
+</body>
+
+</html>
