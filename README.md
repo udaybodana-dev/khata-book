@@ -2,6 +2,8 @@
 
 A comprehensive financial ledger application. Manage mathematical states, track custom categories, and automatically balance income against expenses in a clean, high-performance interface.
 
+`Documentation Update (2026): Added live deployment link -` https://udaybodana-dev.github.io/khata-book/
+
 ---
 
 ## ✨ Features
